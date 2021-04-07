@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>ShopNotch</title>
+</head>
+<body>
+    <div class="bg1 bg"></div>
+    <div class="bg2 bg"></div>
+    <header class="navbar">
+        <div class="logo">
+            Shop<span>Notch</span>
+        </div>
+        
+        <div class="burger">
+            <i class="fa fa-bars" style="font-size:40px;"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <aside class="sidebar">
+            <div class="burg burger">
+                <i class="fa fa-bars" style="font-size:40px"></i>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </aside>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <main class="main">
+                <h1 class="heading">Order <span>From</span><br> Home</h1>
+                <p class="slogan">Shop like a Pro.</p>
+                <button class="cta">Start Now <i class="fas fa-chevron-right" style="font-size: 90%;"></i></button>
+            </main>
+        </div>
+        <div class="right">
+            <img src="img1.png" alt="Image" class="img">
+        </div>
+    </div>
+
+    
+    <script>
+        const toggleBtn = document.querySelector(".burger");
+        const sidebar = document.querySelector(".sidebar");
+        const close = document.querySelector(".burg");
+        
+        toggleBtn.addEventListener("click", toggle);
+        close.addEventListener("click", toggle);
+        
+        function toggle() {
+         sidebar.classList.toggle("hide");
+        }
+
+    </script>
+
+</body>
+</html>

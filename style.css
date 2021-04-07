@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #191919;
+    font-family: poppins;
+    position: absolute;
+}
+.bg{
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #00c2ff10;
+    pointer-events: none;
+}
+.bg1{
+    clip-path: polygon(88% 0, 100% 0, 100% 100%, 71% 100%);
+    
+}
+.bg2{
+    clip-path: polygon(0 69%, 0% 100%, 20% 100%);
+}
+.burger{
+    display: none;
+}
+header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    color: white;
+}
+aside{
+    display: none;
+}
+.logo{
+    cursor: pointer;    
+    margin-left: 3em;
+    font-size: 1.8em;
+}
+header span{
+    color:#30a47e;
+}
+.active{
+    color:#30a47e;
+    /* background-color: white; */
+    padding: 0.4em 1em;
+    border-radius: 50px;  
+    border: 2px solid white;
+}
+.active:hover{
+    color:white;
+    background-color: #30a47e;
+    border-radius: 50px;  
+    border: 2px solid #30a47e;
+}
+nav{
+    padding-right: 6em;
+}
+nav ul{
+    display: flex;  
+    list-style: none;
+}
+nav ul li{
+    padding: 1em;
+}
+nav ul li a{
+    transition: 0.3s all ease;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #30a47e;
+}
+.container{
+    height: 85vh;
+    display: flex;
+    background-color: #191919;
+}
+.left{
+    height: 85vh;
+    width: 50vw;
+}
+.main{
+    color: white;
+    margin: 7em 5.4em;
+}
+.heading{
+    font-size: 3em;
+    line-height: 1;
+}
+.heading span{
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+.slogan{
+    font-size: 1.3em;
+    margin-top: 1.3em;
+}
+.cta{
+    margin: 1em 3em;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: poppins;
+    background-color: #f5f851;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    transition: 0.15s all ease-in-out;
+}
+.cta:hover{
+    background-color: #bece33;
+}
+.right{
+    height: 85vh;
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.img{
+    height: 90%;
+}
+@media screen and (max-width:1000px){
+    .logo{
+        margin-left: 2em;
+    }
+    .main{
+        margin-left: 3.7em;
+    }
+    nav{
+        padding-right: 4em;
+    }
+    .cta{
+        font-size: 1.3em;
+        padding: 0.5em 1em;
+        margin: 1em;
+    }
+    .heading{
+        font-size: 2em;
+        line-height: 1;
+    }
+    .slogan{
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    .img{
+        height: 75%;
+    }
+}
+@media screen and (max-width:725px){
+    nav{
+        padding-right: 2em;
+    }
+    .cta{
+        font-size: 1em;
+        padding: 0.4em .8em;
+        margin: 1em;
+    }
+    .img{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:588px){
+    nav{
+        display: none;
+    }
+    .logo{
+        margin-left: 1em;
+    }
+    .heading{
+        font-size: 2.2em;
+    }
+    .cta{
+        font-size: 1.3em;
+        padding: 0.4em .8em;
+        margin: 1.3em;
+    }
+    .main{
+        margin-left: 1.7em;
+    }
+    .img{
+        height: 35%;
+    }
+    .container{
+        height: 85vh;
+    }
+    .left{
+        height: 85vh;
+        width: 65vw;
+    }
+    .right{
+        height: 85vh;
+        width: 35vw;
+        align-items: center;
+    }
+    .burger{
+        margin-right: 2em;
+        display: block;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+    }
+    .burger:hover{
+        color: #30a47e;
+    }
+    aside{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgb(20, 20, 20);
+        display: block;
+        width: 50%;
+        height: 100%;
+        transition: all 0.2s ease-in;
+        transform: translate(100%);
+        z-index: 2;
+    }
+    .burger{
+        margin: 10px 30px;
+        display: flex;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+    }
+    .links{
+        width: 100%;
+        margin-top: 4em;
+    }
+    .links li{
+        list-style: none;
+        padding:  1em 1.2em;
+        transition: 0.3s all ease-in-out;
+        font-size: 1.4em;
+    }
+    .links li a{
+        text-decoration: none;
+        color: white;
+    }
+    .burg{
+        margin: 1.6em;
+        height: 0%;
+        background-color: teal;
+        transition: all 0.3s ease-in-out;
+    }
+    .links li:hover{
+        cursor: pointer;
+        background-color: #00c2ff10;
+        padding-left: 2.5em;
+    }
+    .hide{
+        transform: translatex(0%);
+    }
+}
