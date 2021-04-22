@@ -19,10 +19,9 @@ body{
 }
 .bg1{
     clip-path: polygon(88% 0, 100% 0, 100% 100%, 71% 100%);
-    
 }
 .bg2{
-    clip-path: polygon(0 69%, 0% 100%, 20% 100%);
+    clip-path: polygon(0 68%, 0% 100%, 20% 100%);
 }
 .burger{
     display: none;
@@ -47,7 +46,6 @@ header span{
 }
 .active{
     color:#30a47e;
-    /* background-color: white; */
     padding: 0.4em 1em;
     border-radius: 50px;  
     border: 2px solid white;
@@ -188,17 +186,11 @@ nav ul li a:hover{
     .img{
         height: 35%;
     }
-    .container{
-        height: 85vh;
-    }
     .left{
-        height: 85vh;
         width: 65vw;
     }
     .right{
-        height: 85vh;
         width: 35vw;
-        align-items: center;
     }
     .burger{
         margin-right: 2em;
@@ -221,12 +213,6 @@ nav ul li a:hover{
         transform: translate(100%);
         z-index: 2;
     }
-    .burger{
-        margin: 10px 30px;
-        display: flex;
-        cursor: pointer;
-        transition: all 0.1s ease-in;
-    }
     .links{
         width: 100%;
         margin-top: 4em;
@@ -237,6 +223,11 @@ nav ul li a:hover{
         transition: 0.3s all ease-in-out;
         font-size: 1.4em;
     }
+    .links li:hover{
+        cursor: pointer;
+        background-color: #00c2ff10;
+        padding-left: 2.5em;
+    }
     .links li a{
         text-decoration: none;
         color: white;
@@ -244,13 +235,6 @@ nav ul li a:hover{
     .burg{
         margin: 1.6em;
         height: 0%;
-        background-color: teal;
-        transition: all 0.3s ease-in-out;
-    }
-    .links li:hover{
-        cursor: pointer;
-        background-color: #00c2ff10;
-        padding-left: 2.5em;
     }
     .hide{
         transform: translatex(0%);
