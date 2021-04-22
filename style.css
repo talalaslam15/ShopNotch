@@ -181,16 +181,21 @@ nav ul li a:hover{
         margin: 1.3em;
     }
     .main{
-        margin-left: 1.7em;
+        margin: 4em 2em;
     }
     .img{
-        height: 35%;
+        height: 100%;
+    }
+    .container{
+        flex-direction: column;
     }
     .left{
-        width: 65vw;
+        width: 100vw;
+        height: 45vh;
     }
     .right{
-        width: 35vw;
+        width: 100vw;
+        height: 40vh;
     }
     .burger{
         margin-right: 2em;
