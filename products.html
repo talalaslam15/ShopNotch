@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="products.css">
     <title>ShopNotch</title>
 </head>
 <body>
@@ -23,8 +24,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -38,20 +39,26 @@
         </aside>
     </header>
 
-    <div class="container">
-        <div class="left">
-            <img src="c1.svg" alt="dots" class="dots">
-            <main class="main">
-                <h1 class="heading">Order From<br>Home</h1>
-                <p class="slogan">Shop like a Pro.</p>
-                <button onclick="document.location='products.html'" class="cta">
-                    Start Now
-                    <i class="fas fa-chevron-right" style="font-size: 90%;"></i>
-                </button>
-            </main>
+    <img src="c1.svg" alt="dots" class="dots">
+    <h1 class="prod-heading">Choose A Category</h1><br>
+    <div class="category-container">
+        <div class="card cat1">
+            <a href="#">
+                <img src="/images/elec.jpg" alt="Electronic">
+                <p>Electronics</p>
+            </a>
         </div>
-        <div class="right">
-            <img src="img1.png" alt="Image" class="img">
+        <div class="card cat2">
+            <a href="#">
+                <img src="/images/cloth.jpg" alt="Clothing">
+                <p>Clothing</p>
+            </a>
+        </div>
+        <div class="card cat3">
+            <a href="#">
+                <img src="/images/appli.jpg" alt="Appliances">
+                <p>Home Appliances</p>
+            </a>
         </div>
     </div>
     

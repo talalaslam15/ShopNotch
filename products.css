@@ -1,0 +1,43 @@
+:root{
+    --primary:#30a47e;
+}
+.prod-heading{
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+.category-container{
+    display: flex;
+    min-height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    border: 4px solid var(--primary);
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+.card a{
+    padding: 3em 2em;
+}
+.card img{
+    border-radius: 50%;
+    width: 100%;
+}
+.card:hover{
+    background-color: #30a47d25;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width:952px){
+.card:hover{
+    margin-bottom: 1em;
+}
+}

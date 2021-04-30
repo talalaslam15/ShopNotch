@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root{
+    --primary:#30a47e;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -7,14 +10,18 @@
 body{
     background-color: #191919;
     font-family: poppins;
+}
+.dots{
+    pointer-events: none;
     position: absolute;
+    left: -50px;
 }
 .bg{
-    z-index: 1;
     position: absolute;
+    z-index: -1;
     height: 100vh;
     width: 100%;
-    background-color: #00c2ff10;
+    background-color: #00c3ff10;
     pointer-events: none;
 }
 .bg1{
@@ -42,19 +49,23 @@ aside{
     font-size: 1.8em;
 }
 header span{
-    color:#30a47e;
+    color:var(--primary);
 }
 .active{
-    color:#30a47e;
+    color:var(--primary);
     padding: 0.4em 1em;
     border-radius: 50px;  
     border: 2px solid white;
 }
 .active:hover{
     color:white;
-    background-color: #30a47e;
+    background-color: var(--primary);
     border-radius: 50px;  
-    border: 2px solid #30a47e;
+    border: 2px solid var(--primary);
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 nav{
     padding-right: 6em;
@@ -68,32 +79,25 @@ nav ul li{
 }
 nav ul li a{
     transition: 0.3s all ease;
-    color: white;
-    text-decoration: none;
 }
 nav ul li a:hover{
-    color: #30a47e;
+    color: var(--primary);
 }
 .container{
     height: 85vh;
     display: flex;
-    background-color: #191919;
 }
 .left{
-    height: 85vh;
-    width: 50vw;
+    flex-grow: 1;
 }
 .main{
     color: white;
     margin: 7em 5.4em;
 }
 .heading{
+    font-weight: lighter;
     font-size: 3em;
     line-height: 1;
-}
-.heading span{
-    font-size: 0.6em;
-    font-weight: lighter;
 }
 .slogan{
     font-size: 1.3em;
@@ -115,8 +119,7 @@ nav ul li a:hover{
     background-color: #bece33;
 }
 .right{
-    height: 85vh;
-    width: 50vw;
+    flex-grow: 1;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -143,10 +146,6 @@ nav ul li a:hover{
         font-size: 2em;
         line-height: 1;
     }
-    .slogan{
-        font-size: 1em;
-        margin-top: 1em;
-    }
     .img{
         height: 75%;
     }
@@ -155,10 +154,8 @@ nav ul li a:hover{
     nav{
         padding-right: 2em;
     }
-    .cta{
-        font-size: 1em;
-        padding: 0.4em .8em;
-        margin: 1em;
+    .main{
+        width: 68%;
     }
     .img{
         height: 60%;
@@ -176,12 +173,9 @@ nav ul li a:hover{
         font-size: 2.2em;
     }
     .cta{
-        font-size: 1.3em;
+        font-size: 1.5em;
         padding: 0.4em .8em;
         margin: 1.3em;
-    }
-    .main{
-        margin: 4em 2em;
     }
     .img{
         height: 100%;
@@ -189,12 +183,16 @@ nav ul li a:hover{
     .container{
         flex-direction: column;
     }
+    .main{
+        text-align: center;
+    }
     .left{
-        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 45vh;
     }
     .right{
-        width: 100vw;
         height: 40vh;
     }
     .burger{
@@ -204,42 +202,40 @@ nav ul li a:hover{
         transition: all 0.1s ease-in;
     }
     .burger:hover{
-        color: #30a47e;
+        color: var(--primary);
     }
-    aside{
+    .sidebar{
         position: fixed;
         top: 0;
         right: 0;
-        background-color: rgb(20, 20, 20);
+        background-color: #141414;
         display: block;
         width: 50%;
         height: 100%;
         transition: all 0.2s ease-in;
         transform: translate(100%);
-        z-index: 2;
-    }
-    .links{
-        width: 100%;
-        margin-top: 4em;
     }
     .links li{
         list-style: none;
-        padding:  1em 1.2em;
         transition: 0.3s all ease-in-out;
         font-size: 1.4em;
+    }
+    .links li a{
+        display: block;
+        padding:  1em 1.2em;
     }
     .links li:hover{
         cursor: pointer;
         background-color: #00c2ff10;
-        padding-left: 2.5em;
+        padding-left: 1.5em;
     }
-    .links li a{
-        text-decoration: none;
-        color: white;
+    .cross{
+        margin: 0.6em 0 0.3em 0.7em;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
     }
-    .burg{
-        margin: 1.6em;
-        height: 0%;
+    .cross:hover{
+        color: var(--primary);
     }
     .hide{
         transform: translatex(0%);
