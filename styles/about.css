@@ -9,7 +9,7 @@ h1{
     font-weight: lighter;
 }
 .wc{
-    margin: 1em;
+    margin-bottom: 1em;
 }
 p{
     text-align: center;
@@ -26,6 +26,7 @@ p{
     color: white;
     text-align: center;
     margin-top: 1em;
+    width: 100%;
 }
 
 @media screen and (max-width:603px){
@@ -35,6 +36,13 @@ p{
     }
     .bg{
     height: 120%;
+    }
+
+}
+@media screen and (max-width:903px){
+    
+    .features{
+        font-size: 1.5em;
     }
 
 }
