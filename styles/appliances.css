@@ -1,0 +1,74 @@
+:root{
+    --primary:#30a47e;
+}
+.prod-heading{
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+.category-container{
+    display: flex;
+    min-height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    margin: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 381px;
+    border: 1px solid white;
+    transition: 0.3s all ease-in-out;
+}
+.card img{
+    width: 100%;
+}
+.add{
+    width: 100%;
+    background-color: var(--primary);
+    padding: 0.6em;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.add:hover{
+    background-color: #237258;
+}
+.back a{
+    padding: 0.5em 1em;
+    display: inline;
+    border: 2px solid var(--primary);
+    font-size: 1.2em;
+    transition: 0.2s all ease-in-out;
+}
+.back a:hover{
+    background-color: white;
+    color: var(--primary);
+}
+@media screen and (max-width:952px){
+    .prod-heading{
+        margin-top: 0.5em;
+        font-size: 1.8em;
+    }
+    .card{
+        width: 220px;
+        height: 321px;
+    }
+}
+@media screen and (max-width:754px){
+    .card:hover{
+        margin-bottom: 1em;
+    }
+    .bg{
+    height: 150%;
+    }
+}
+@media screen and (max-width:503px){
+    .bg{
+    height: 205%;
+    }
+}

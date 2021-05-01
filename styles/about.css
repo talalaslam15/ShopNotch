@@ -1,0 +1,40 @@
+:root{
+    --primary:#30a47e;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.about-head{
+    font-weight: lighter;
+}
+.wc{
+    margin: 1em;
+}
+p{
+    text-align: center;
+    color: white;
+}
+.feat{
+    border: 1px solid white;
+    font-weight: lighter;
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+}
+
+@media screen and (max-width:603px){
+    
+    .features{
+        font-size: 1.3em;
+    }
+    .bg{
+    height: 120%;
+    }
+
+}

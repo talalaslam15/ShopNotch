@@ -37,7 +37,24 @@
 }
 
 @media screen and (max-width:952px){
-.card:hover{
-    margin-bottom: 1em;
+    .prod-heading{
+        margin-top: 0.5em;
+        font-size: 1.8em;
+    }
+    .card{
+        width: 220px;
+    }
 }
+@media screen and (max-width:754px){
+    .card:hover{
+        margin-bottom: 1em;
+    }
+    .bg{
+    height: 140%;
+    }
+}
+@media screen and (max-width:503px){
+    .bg{
+    height: 185%;
+    }
 }

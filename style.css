@@ -14,12 +14,13 @@ body{
 .dots{
     pointer-events: none;
     position: absolute;
+    z-index: -2;
     left: -50px;
 }
 .bg{
     position: absolute;
     z-index: -1;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #00c3ff10;
     pointer-events: none;
@@ -116,7 +117,7 @@ nav ul li a:hover{
     transition: 0.15s all ease-in-out;
 }
 .cta:hover{
-    background-color: #bece33;
+    background-color: #ccdb45;
 }
 .right{
     flex-grow: 1;
@@ -126,6 +127,7 @@ nav ul li a:hover{
 }
 .img{
     height: 90%;
+    pointer-events: none;
 }
 @media screen and (max-width:1000px){
     .logo{
@@ -173,7 +175,7 @@ nav ul li a:hover{
         font-size: 2.2em;
     }
     .cta{
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding: 0.4em .8em;
         margin: 1.3em;
     }
